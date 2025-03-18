@@ -8,11 +8,22 @@
 import SwiftUI
 import MapboxMaps
 
+//  Initialize the styled map and center on Chicago
 struct ContentView: View {
     var body: some View {
-        let center = CLLocationCoordinate2D(latitude: 39.5, longitude: -98.0)
-        Map(initialViewport: .camera(center: center, zoom: 2, bearing: 0, pitch: 0))
-            .ignoresSafeArea()
+        Map(initialViewport: .camera(
+            center: CLLocationCoordinate2D(latitude: 41.868370, longitude: -87.628240),
+            zoom: 11.84
+        ))
+          .mapStyle(MapStyle(uri: StyleURI(rawValue: "mapbox://styles/doordash/cm2u183cp000e01ola9h5cw28")!))
+          .ornamentOptions(OrnamentOptions(
+              scaleBar: .init(visibility: .hidden),
+              compass: .init(visibility: .hidden),
+              logo: .init(margins: .init(x: -10000, y: 0)),
+              attributionButton: .init(margins: .init(x: -10000, y: 0))
+          ))
+          .ignoresSafeArea()
+        
     }
 }
 
