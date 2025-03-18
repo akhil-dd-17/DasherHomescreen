@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0A66F3F62D8940DA00704193 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 0A66F3F52D8940DA00704193 /* MapboxMaps */; };
+		0A66F3F92D89422C00704193 /* MapboxMaps in Frameworks */ = {isa = PBXBuildFile; productRef = 0A66F3F82D89422C00704193 /* MapboxMaps */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0A66F3D42D8936EC00704193 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -29,9 +34,22 @@
 		0A66F3DD2D8936EC00704193 /* DasherHomescreenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DasherHomescreenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0A66F3F32D893FC400704193 /* Exceptions for "DasherHomescreen" folder in "DasherHomescreen" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0A66F3C22D8936EB00704193 /* DasherHomescreen */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0A66F3C52D8936EB00704193 /* DasherHomescreen */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0A66F3F32D893FC400704193 /* Exceptions for "DasherHomescreen" folder in "DasherHomescreen" target */,
+			);
 			path = DasherHomescreen;
 			sourceTree = "<group>";
 		};
@@ -52,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A66F3F62D8940DA00704193 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A66F3F92D89422C00704193 /* MapboxMaps in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +98,7 @@
 				0A66F3C52D8936EB00704193 /* DasherHomescreen */,
 				0A66F3D62D8936EC00704193 /* DasherHomescreenTests */,
 				0A66F3E02D8936EC00704193 /* DasherHomescreenUITests */,
+				0A66F3F72D89422C00704193 /* Frameworks */,
 				0A66F3C42D8936EB00704193 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +111,13 @@
 				0A66F3DD2D8936EC00704193 /* DasherHomescreenUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0A66F3F72D89422C00704193 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +140,7 @@
 			);
 			name = DasherHomescreen;
 			packageProductDependencies = (
+				0A66F3F52D8940DA00704193 /* MapboxMaps */,
 			);
 			productName = DasherHomescreen;
 			productReference = 0A66F3C32D8936EB00704193 /* DasherHomescreen.app */;
@@ -135,6 +164,7 @@
 			);
 			name = DasherHomescreenTests;
 			packageProductDependencies = (
+				0A66F3F82D89422C00704193 /* MapboxMaps */,
 			);
 			productName = DasherHomescreenTests;
 			productReference = 0A66F3D32D8936EC00704193 /* DasherHomescreenTests.xctest */;
@@ -195,6 +225,9 @@
 			);
 			mainGroup = 0A66F3BA2D8936EB00704193;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0A66F3F42D8940DA00704193 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0A66F3C42D8936EB00704193 /* Products */;
 			projectDirPath = "";
@@ -399,6 +432,7 @@
 				DEVELOPMENT_TEAM = VJ6T7FHHKM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DasherHomescreen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -428,6 +462,7 @@
 				DEVELOPMENT_TEAM = VJ6T7FHHKM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DasherHomescreen/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -558,6 +593,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A66F3F42D8940DA00704193 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mapbox/mapbox-maps-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A66F3F52D8940DA00704193 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A66F3F42D8940DA00704193 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+		0A66F3F82D89422C00704193 /* MapboxMaps */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A66F3F42D8940DA00704193 /* XCRemoteSwiftPackageReference "mapbox-maps-ios" */;
+			productName = MapboxMaps;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A66F3BB2D8936EB00704193 /* Project object */;
 }
