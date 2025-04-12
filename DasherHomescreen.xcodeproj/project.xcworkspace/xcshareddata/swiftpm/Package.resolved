@@ -1,5 +1,5 @@
 {
-  "originHash" : "c48d77ebe93e854e8e2b4bbddf1d5fe4977e5a87efa4e14ea29c90b3e5919e31",
+  "originHash" : "fe8c77fdfd8f295280e2da65e7eedb9f82dc17c4432eba5a51c032ee48d79ad2",
   "pins" : [
     {
       "identity" : "mapbox-common-ios",
@@ -26,6 +26,15 @@
       "state" : {
         "revision" : "66a9c3042f221b3948c8264a49105b4db64b32be",
         "version" : "11.10.1"
+      }
+    },
+    {
+      "identity" : "polyline",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/raphaelmor/Polyline.git",
+      "state" : {
+        "revision" : "353f80378dcd8f17eefe8550090c6b1ae3c9da23",
+        "version" : "5.1.0"
       }
     },
     {
